@@ -1,0 +1,38 @@
+Sensor de estacionamento
+
+(TERMINAL)
+Início
+   ↓
+(ENTRADA/SAÍDA)
+Ler distância
+   ↓
+(DECISÃO)
+Distância < 0,5 m?
+
+   ├── SIM →
+   │       (PROCESSAMENTO)
+   │       Tocar bipe contínuo
+   │           ↓
+   │       (ENTRADA/SAÍDA)
+   │       Exibir "PARE"
+   │           ↓
+   │       (TERMINAL)
+   │       Fim
+   │
+   └── NÃO →
+           (DECISÃO)
+           Distância ≤ 2 m?
+
+               ├── SIM →
+               │       (PROCESSAMENTO)
+               │       Tocar bipe intermitente
+               │           ↓
+               │       (TERMINAL)
+               │       Fim
+               │
+               └── NÃO →
+                       (PROCESSAMENTO)
+                       Não emitir som
+                           ↓
+                       (TERMINAL)
+                       Fim

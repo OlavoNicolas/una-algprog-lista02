@@ -1,0 +1,27 @@
+Caixa eletrônico
+
+(TERMINAL)
+Início
+   ↓
+(ENTRADA/SAÍDA)
+Ler valor_saque
+   ↓
+(DECISÃO)
+valor_saque ≤ saldo_disponivel?
+
+   ├── SIM →
+   │       (PROCESSAMENTO)
+   │       saldo_disponivel ← saldo_disponivel - valor_saque
+   │           ↓
+   │       (PROCESSAMENTO)
+   │       Entregar as notas
+   │           ↓
+   │       (TERMINAL)
+   │       Fim
+   │
+   └── NÃO →
+           (ENTRADA/SAÍDA)
+           Exibir "Saldo Insuficiente"
+               ↓
+           (TERMINAL)
+           Fim
