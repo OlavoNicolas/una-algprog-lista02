@@ -1,0 +1,36 @@
+Filtro do instagram
+
+(TERMINAL)
+Início
+   ↓
+(ENTRADA/SAÍDA)
+Usuário escolhe uma foto
+   ↓
+(DECISÃO)
+Aplicar filtro P&B?
+
+   ├── SIM →
+   │       (PROCESSAMENTO)
+   │       Transformar imagem em tons de cinza
+   │
+   └── NÃO →
+           (PROCESSAMENTO)
+           Manter imagem original
+
+           ↓
+(DECISÃO)
+Postar agora?
+
+   ├── SIM →
+   │       (PROCESSAMENTO)
+   │       Enviar foto para o servidor
+   │           ↓
+   │       (TERMINAL)
+   │       Fim
+   │
+   └── NÃO →
+           (PROCESSAMENTO)
+           Salvar foto na galeria
+               ↓
+           (TERMINAL)
+           Fim
