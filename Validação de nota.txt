@@ -1,0 +1,35 @@
+Validação de nota
+
+(TERMINAL)
+Início
+   ↓
+(ENTRADA/SAÍDA)
+Ler Nota
+   ↓
+(DECISÃO)
+Nota >= 0 e <= 10?
+
+   ├── NÃO →
+   │       (ENTRADA/SAÍDA)
+   │       Exibir "Nota inválida"
+   │           ↓
+   │       (TERMINAL)
+   │       Fim
+   │
+   └── SIM →
+           (DECISÃO)
+           Nota >= 7?
+
+               ├── SIM →
+               │       (ENTRADA/SAÍDA)
+               │       Exibir "Aprovado!"
+               │           ↓
+               │       (TERMINAL)
+               │       Fim
+               │
+               └── NÃO →
+                       (ENTRADA/SAÍDA)
+                       Exibir "Recuperação"
+                           ↓
+                       (TERMINAL)
+                       Fim
